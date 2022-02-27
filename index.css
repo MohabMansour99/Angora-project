@@ -1,0 +1,510 @@
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Open Sans", sans-serif;
+    color: #666;
+}
+
+:root {
+    --main-color: #f25454;
+}
+
+#home {
+    height: 100vh;
+}
+
+.carousel-item img {
+    height: 100vh;
+}
+
+.slider-content h1 {
+    font-weight: 700;
+    line-height: 1;
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.nav-item {
+    padding-left: 25px;
+}
+
+.nav-item:hover a {
+    color: #F25454 !important;
+}
+
+.home-color {
+    color: #F25454 !important;
+}
+
+.fixed-div {
+    background-color: #1f2528;
+    width: 35px;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    height: 35px;
+    position: absolute;
+    position: fixed;
+    z-index: 99999;
+    top: 30%;
+}
+
+.line-div {
+    width: 100%;
+    height: 1px;
+    opacity: 0.5;
+    background-color: white;
+    z-index: 9999999999;
+    position: absolute;
+    top: 10%;
+}
+
+.ani-div {
+    width: 30px;
+    border-radius: 10px;
+    height: 50px;
+    border: solid white 2px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    cursor: pointer;
+    z-index: 999999999999;
+}
+
+.ani-div:hover {
+    border: var(--main-color) 2px solid;
+    transition: border .5s;
+}
+
+.ani-div .ani-div-contant {
+    width: 10px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: white;
+    position: relative;
+    left: 10;
+    top: 2;
+    animation-name: one;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.ani-div:hover .ani-div-contant {
+    background-color: var(--main-color);
+    transition: background-color 0.5s;
+}
+
+@keyframes one {
+    0% {
+        top: 5;
+    }
+    25% {
+        top: 15;
+    }
+    50% {
+        top: 25;
+    }
+    75% {
+        top: 35;
+    }
+    100% {
+        top: 50;
+        opacity: 0;
+    }
+}
+
+.scroll {
+    border: solid 2px white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    z-index: 999999999999;
+    position: absolute;
+}
+
+.scroll2 {
+    border: solid 2px white;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 57%;
+    z-index: 999999999999;
+    position: absolute;
+}
+
+.about-contant h3 {
+    font-size: 50px;
+    font-weight: 500;
+    font-weight: bolder;
+    color: black;
+}
+
+.about-contant h2 {
+    font-size: 60px;
+    color: #999;
+    opacity: 0.5;
+}
+
+.hrhr {
+    width: 7%;
+    transition: width 1s;
+}
+
+.about-hr:hover .hrhr {
+    width: 15%;
+}
+
+.about-hr p {
+    color: #999;
+    padding: 20px;
+}
+
+.h6-progress1 {
+    position: relative;
+    right: 20%;
+}
+
+.h6-progress2 {
+    position: relative;
+    right: 5%;
+}
+
+.h6-progress3 {
+    position: relative;
+    right: 15%;
+}
+
+.h6-progress4 {
+    position: relative;
+    right: 30%;
+}
+
+.progress .progress-bar {
+    background-color: #f25454;
+    height: 5px;
+}
+
+.progress {
+    height: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.team-item {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-item h5 {
+    margin-top: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+.team-overlay {
+    position: absolute;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity 1s;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.team-overlay i {
+    padding: 15px;
+    color: white;
+}
+
+.team-item:hover .team-overlay {
+    opacity: 0.5;
+    color: white;
+    overflow: hidden;
+    transition: color 1s
+}
+
+.team-item img {
+    transition: transform 1.2s;
+}
+
+.team-item:hover img {
+    transform: scale(1.2, 1.2);
+    overflow: hidden;
+}
+
+.team-contant {
+    text-align: center;
+}
+
+.team-contant h5 {
+    padding-top: 10px;
+    font-weight: bolder;
+    color: black;
+}
+
+.team-item:hover .team-contant h5 {
+    color: red;
+    overflow: hidden;
+}
+
+#projects {
+    background-color: #fafafa;
+}
+
+.contactus {
+    width: 60%;
+    padding-top: 80px;
+    padding-bottom: 40px;
+}
+
+.contactus h1 {
+    color: black;
+}
+
+.contactus button {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #f25454;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.projects-item p {
+    padding-left: 60px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.projects-item h2 {
+    color: black;
+    font-size: 22px;
+}
+
+.projects-item i {
+    font-size: 25px;
+    color: #f25454;
+}
+
+.projects-item:hover h2 {
+    color: #f25454;
+    transition: color 1s
+}
+
+.blog-item h1 {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+}
+
+.www {
+    margin-top: -20px;
+}
+
+.blog-item i {
+    margin-right: 15px;
+    font-size: 25px;
+    color: var(--main-color);
+}
+
+.blog-item h5 {
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.input-c {
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    color: #a6a6a6;
+    border: #eee solid 2px;
+}
+
+.input-v {
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 2px solid #eee;
+    background-color: white;
+}
+
+.blog-item:hover h5 {
+    color: var(--main-color);
+    transition: color 1s
+}
+
+.input-btn button {
+    margin-left: 10px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    color: white;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+#contact {
+    background-image: url(images/dotted-map.png);
+    background-position: cover;
+    background-size: 100% 100%;
+    background-color: black;
+    margin-top: 40px;
+    padding: 30px;
+    margin-bottom: -40px !important;
+    position: relative;
+}
+
+.contact-fixed {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    opacity: .8;
+    color: white;
+    cursor: pointer;
+    background-color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 48%;
+    top: 0px;
+}
+
+.contact-fixed:hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.contact-item {
+    position: relative;
+}
+
+.contact-img {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact-item p {
+    font-size: 20px;
+}
+
+.contact-item h1 {
+    font-weight: bolder;
+    color: white;
+}
+
+.contact-item ul {
+    list-style: none;
+}
+
+.ul1 li {
+    padding: 10px;
+}
+
+.ul2 li a {
+    padding: 0;
+    margin: 0;
+    color: #666;
+}
+
+.contact-a:hover a {
+    color: var(--main-color);
+    transition: color 1s
+}
+
+.contact-a a {
+    text-decoration: none;
+}
+
+.ul4 li a {
+    padding: 25px;
+    text-decoration: none;
+}
+
+.populer-a {
+    display: block;
+    float: left;
+    color: #666;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 2px 10px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #eee;
+}
+
+.populer-a:hover {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: color 1s, border 1s;
+}
+
+#end {
+    background-color: #1a1a1a;
+}
+
+.social-media {
+    width: 50%;
+    padding: 10px;
+}
+
+.social-li {
+    list-style: none;
+    display: flex;
+    padding-top: 50px;
+}
+
+.social-li li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.social-li li {
+    padding: 10px;
+}
+
+.social-p {
+    padding-top: 65px;
+}
+
+.social-p span {
+    color: white;
+}
+
+.social-p p {
+    color: #666;
+    font-size: 20px;
+    text-align: end;
+}
+
+.angora:hover {
+    color: var(--main-color);
+    transition: color 1s;
+}
+
+.li-hover:hover a {
+    color: var(--main-color);
+    transition: color 1s;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-indent: 0;
+}
